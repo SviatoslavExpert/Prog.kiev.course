@@ -6,24 +6,25 @@
 package Java_01_Start;
 
 import java.util.Arrays;
+import java.util.Collections;
+
+
+import java.util.Arrays;
 
 public class task_04_02 {
-    public static void main (String []args){
-        int []array = {1,2,3,4};
-        System.out.println(Arrays.toString(array));
-        //int x = array.length;
-        for(int i = 0; i < array.length; i++){
-            //System.out.println(array[array.length]);
-            //System.out.print(array[i]);
-            array[i] = array[array.length - i - 1];
-            System.out.print(array[i]);
-            System.out.print(" ");
-            System.out.print(i);
-            System.out.println();
+
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4};
+        System.out.println(Arrays.toString(arr));
+        rotate(arr);
+    }
+
+    static void rotate(int[]a){
+        for (int i = 0; i < a.length/2; i++) {
+            int b = a[i];
+            a[i] = a[a.length-1-i];
+            a[a.length-i-1] = b;
         }
-           System.out.println(Arrays.toString(array));
-           //System.out.println(array[i]);
-            //Выводит в консоль массив
-        System.out.println(array[array.length-1]);
+        System.out.println(Arrays.toString(a));
     }
 }
