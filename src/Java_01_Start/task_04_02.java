@@ -6,10 +6,6 @@
 package Java_01_Start;
 
 import java.util.Arrays;
-import java.util.Collections;
-
-
-import java.util.Arrays;
 
 public class task_04_02 {
 
