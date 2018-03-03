@@ -67,7 +67,6 @@ public class task_04_03 {
         System.out.println(numt);
 
         sc.close();
-
     }
 
     public static String toWord(int t, int i, int n) {
@@ -168,7 +167,6 @@ public class task_04_03 {
         if (t > 0 && n > 0 && i == n - 7) {
             text = text + "million ";
         }
-
         return text;
     }
 }
