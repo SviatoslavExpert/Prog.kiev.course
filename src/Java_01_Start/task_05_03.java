@@ -6,6 +6,29 @@
 
 package Java_01_Start;
 
-public class task_05_03 {
+import java.util.Arrays;
 
+public class task_05_03 {
+    public static void main(String[] args){
+        int[] arr = {1,2,3,4,5};
+        permute(arr,arr.length);
+    }
+
+    private static void permute(int[] arr, int size) {
+        if (size<2){
+            System.out.println(Arrays.toString(arr));
+        }else{
+            for (int k = 0; k <size ; k++) {
+                swap(arr,k,size - 1);
+                permute(arr,size - 1);
+                swap(arr,size - 1,k);
+            }
+        }
+    }
+
+    private static void swap(int[] arr, int k, int i) {
+        int tmp = arr[k];
+        arr[k] = arr[i];
+        arr[i] = tmp;
+    }
 }
