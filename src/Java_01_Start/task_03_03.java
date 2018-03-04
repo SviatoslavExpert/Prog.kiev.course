@@ -15,5 +15,31 @@ Java Start Task 03.03
 
 package Java_01_Start;
 
+import java.util.Scanner;
+
 public class task_03_03 {
+
+    public static void main(String[] args) {
+        double x;
+        double y;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Input x:");
+        x = sc.nextDouble();
+        System.out.println("Input y:");
+        y = sc.nextDouble();
+
+        System.out.println(((x > 0 && y < 1) || (y > 0 && x < 4) || (x > 4 && y > 1)) ? "NO" : "YES");
+        sc.close();
+    }
 }
+
+
+/*
+Математическая часть - векторное и псевдоскалярное произведения.
+Реализация - считаются произведения (1, 2, 3 - вершины треугольника, 0 - точка):
+(x1 - x0) * (y2 - y1) - (x2 - x1) * (y1 - y0)
+(x2 - x0) * (y3 - y2) - (x3 - x2) * (y2 - y0)
+(x3 - x0) * (y1 - y3) - (x1 - x3) * (y3 - y0)
+Если они одинакового знака, то точка внутри треугольника, если что-то из этого - ноль, то точка лежит на стороне, иначе точка вне треугольника.
+ */

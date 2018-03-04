@@ -20,6 +20,7 @@ public class task_05_02 {
         }
         return obr;
     }
+
     public static void main(String[] args)
     {
         int otv = 0;
