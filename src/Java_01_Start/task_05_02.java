@@ -20,7 +20,7 @@ public class task_05_02 {
         }
         return obr;
     }
-    static void Main(String[] args)
+    public static void main(String[] args)
     {
         int otv = 0;
         int[] m = new int[999 * 999]; //в этом массиве будут все палиндромы
@@ -43,8 +43,6 @@ public class task_05_02 {
         {
             if (m[i]> otv) otv = m[i];
         }
-        //Console.WriteLine(otv);
-        //Console.ReadKey();
         System.out.println(otv);
     }
 }
