@@ -18,9 +18,11 @@ public class task_03_02 {
         double x = sc.nextDouble();
         System.out.println("Введите значение координаты Y точки:");
         double y = sc.nextDouble();
-        double result = Math.sqrt((x * x) + (y * y));
 
-        if (result > 4) System.out.println("Точка лежит вне круга.");
+        double result = Math.sqrt((x * x) + (y * y));
+        double radius = 4;
+
+        if (result > radius) System.out.println("Точка лежит вне круга.");
         else System.out.println("Точка лежит внутри круга.");
         sc.close();
     }
