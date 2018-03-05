@@ -13,12 +13,15 @@ public class task_03_01 {
 
     public static void main (String []args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите 4 числа:");
-
+        System.out.println("Введите первое число:");
         int a = sc.nextInt();
+        System.out.println("Введите второе число:");
         int b = sc.nextInt();
+        System.out.println("Введите третье число:");
         int c = sc.nextInt();
+        System.out.println("Введите четвертое число:");
         int d = sc.nextInt();
+
         System.out.println(select(select(a,b), select(c,d)));
     }
 
