@@ -16,5 +16,6 @@ public class task_02_03 {
         System.out.println("Введите значение радиуса:");
         double radius = sc.nextDouble();
         System.out.println("Длина окружности = " + 2 * Math.PI * radius);
+        sc.close();
     }
 }
