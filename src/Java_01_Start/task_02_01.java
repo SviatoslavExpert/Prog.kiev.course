@@ -42,5 +42,7 @@ public class task_02_01 {
         System.out.println(Result3);
         System.out.println(Result4);
         System.out.println(Result5);
+
+        sc.close();
     }
 }

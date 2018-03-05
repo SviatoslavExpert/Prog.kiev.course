@@ -33,5 +33,7 @@ public class task_02_01b {
         System.out.println((Remainder2 - Remainder3)/100);
         System.out.println((Remainder3 - Remainder4)/10);
         System.out.println(Remainder4);
+
+        sc.close();
     }
 }
