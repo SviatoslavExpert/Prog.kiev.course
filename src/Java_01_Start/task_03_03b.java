@@ -23,24 +23,19 @@ public class task_03_03b {
         //   scanner gets X and Y
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите координату Х");
-        double x = sc.nextDouble();
+        double X = sc.nextDouble();
         System.out.print("Введите координату Y");
-        double y = sc.nextDouble();
+        double Y = sc.nextDouble();
 
         //  getting coordinates of the triangle
-        double ax = 0;
-        double ay = 0;
-        double bx = 4;
-        double by = 4;
-        double cx = 6;
-        double cy = 1;
+        double Ax = 0, Ay = 0, Bx = 4, By = 4, Cx = 6, Cy = 1;
 
         //   calculating if the point is inside the triangle
-        double k1 = (ax - x) * (by - ay) - (bx - ax) * (ay - y);
-        double k2 = (bx - x) * (cy - by) - (cx - bx) * (by - y);
-        double k3 = (cx - x) * (ay - cy) - (ax - cx) * (cy - y);
+        double k1 = (Ax - X) * (By - Ay) - (Bx - Ax) * (Ay - Y);
+        double k2 = (Bx - X) * (Cy - By) - (Cx - Bx) * (By - Y);
+        double k3 = (Cx - X) * (Ay - Cy) - (Ax - Cx) * (Cy - Y);
 
-        if(k1>0 && k2>0 && k3>0 || k1<0 && k2<0 && k3<0){
+        if(k1 > 0 && k2 > 0 && k3 > 0 || k1 < 0 && k2 < 0 && k3 < 0){
             System.out.println("Точка лежит в треугольнике.");
         }
         else if(k1 == 0 && k2 == 0 && k3 == 0){
@@ -49,12 +44,9 @@ public class task_03_03b {
         else{
             System.out.println("Точка не лежит в треугольнике.");
         }
-
         sc.close();
     }
 }
-
-
 /*
 Математическая часть - векторное и псевдоскалярное произведения.
 Реализация - считаются произведения (1, 2, 3 - вершины треугольника, 0 - точка):
