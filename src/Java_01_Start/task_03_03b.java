@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class task_03_03b {
 
     public static void main(String[] args) {
-        //   scanner gets X and Y
+        //   scanning X and Y
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите координату Х");
         double X = sc.nextDouble();
