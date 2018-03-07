@@ -20,18 +20,33 @@ import java.util.Scanner;
 public class task_03_03b {
 
     public static void main(String[] args) {
-        double x1 = 0, y1 = 0, x2 = 4, y2 = 4, x3 = 6, y3 = 1;
+        //   scanner gets X and Y
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите координату точки Х:");
-        double x = sc.nextDouble();
-        System.out.println("Введите координату точки Y:");
-        double y = sc.nextDouble();
+        System.out.print("Введите координату Х");
+        double X = sc.nextDouble();
+        System.out.print("Введите координату Y");
+        double Y = sc.nextDouble();
 
-        System.out.println(((x > 0 && y < 1) || (y > 0 && x < 4) || (x > 4 && y > 1)) ? "NO" : "YES");
+        //  getting coordinates of the triangle
+        double Ax = 0, Ay = 0, Bx = 4, By = 4, Cx = 6, Cy = 1;
+
+        //   calculating if the point is inside the triangle
+        double k1 = (Ax - X) * (By - Ay) - (Bx - Ax) * (Ay - Y);
+        double k2 = (Bx - X) * (Cy - By) - (Cx - Bx) * (By - Y);
+        double k3 = (Cx - X) * (Ay - Cy) - (Ax - Cx) * (Cy - Y);
+
+        if(k1 > 0 && k2 > 0 && k3 > 0 || k1 < 0 && k2 < 0 && k3 < 0){
+            System.out.println("Точка лежит в треугольнике.");
+        }
+        else if(k1 == 0 && k2 == 0 && k3 == 0){
+            System.out.println("Точка лежит на стороне треугольника.");
+        }
+        else{
+            System.out.println("Точка не лежит в треугольнике.");
+        }
         sc.close();
     }
 }
-
 
 /*
 Математическая часть - векторное и псевдоскалярное произведения.
