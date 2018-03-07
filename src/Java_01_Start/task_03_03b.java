@@ -23,9 +23,9 @@ public class task_03_03b {
         double x1 = 0, y1 = 0, x2 = 4, y2 = 4, x3 = 6, y3 = 1;
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите координату точки Х:");
-        double pointX = sc.nextDouble();
+        double x = sc.nextDouble();
         System.out.println("Введите координату точки Y:");
-        double pointY = sc.nextDouble();
+        double y = sc.nextDouble();
 
         System.out.println(((x > 0 && y < 1) || (y > 0 && x < 4) || (x > 4 && y > 1)) ? "NO" : "YES");
         sc.close();
