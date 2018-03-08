@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class task_04_03 {
 
     public static void main(String[] args) {
-
+        //  getting the amount of money
         System.out.println("How much money do you have?");
         Scanner sc = new Scanner(System.in);
         double num = sc.nextDouble();
