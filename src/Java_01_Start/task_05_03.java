@@ -9,8 +9,13 @@ package Java_01_Start;
 import java.util.Arrays;
 
 public class task_05_03 {
+
     public static void main(String[] args){
         int[] arr = {1,2,3,4,5};
+        System.out.println("Original array: " + Arrays.toString(arr));
+        System.out.println();
+
+        System.out.println("Array combinations:");
         permute(arr,arr.length);
     }
 

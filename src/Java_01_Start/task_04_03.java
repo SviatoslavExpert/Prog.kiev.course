@@ -20,8 +20,8 @@ public class task_04_03 {
         Scanner sc = new Scanner(System.in);
         double num = sc.nextDouble();
 
-        String text = String.format("%.2f", num);
-        int n = text.indexOf(",");
+        String text = String.format("%.2f", num);  //   f - format for double;  we got num from the scanner;
+        int n = text.indexOf(",");   //  method indexOf() returns index of given character value
 
         char[] t = text.toCharArray();   //  method converts this string into character array.
 
@@ -170,3 +170,14 @@ public class task_04_03 {
         return text;
     }
 }
+
+/*
+% is a symbol for variable
+
+. and the number following modifies how many digit decimal points you want to print
+
+%f string formatting option treats the value as a decimal, and prints it to six decimal places
+
+"%.4f" would print 54.6293
+"%.2f" prints 54.63 rounded
+ */
