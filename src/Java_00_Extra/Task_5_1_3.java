@@ -14,6 +14,7 @@ public class Task_5_1_3 {
         int x = sc.nextInt();
         System.out.println("Введите ширину прямоугольника:");
         int y = sc.nextInt();
+        sc.close();
 
         draw(x,y);
     }
