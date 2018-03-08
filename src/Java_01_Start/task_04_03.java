@@ -23,7 +23,7 @@ public class task_04_03 {
         String text = String.format("%.2f", num);
         int n = text.indexOf(",");
 
-        char[] t = text.toCharArray();
+        char[] t = text.toCharArray();   //  method converts this string into character array.
 
         String val = "";
         String numt = "";
