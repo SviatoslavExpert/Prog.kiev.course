@@ -17,7 +17,13 @@ import java.util.Scanner;
 public class task_05_01 {
     public static void main (String []args){
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
+        System.out.println("Введите последовательность чисел:");
 
+        String s = sc.nextLine();
+        char[] x = s.toCharArray();
+        System.out.println(s);
+        for(int i = 0; i < x.length; i++){
+            System.out.print(x[i]);
+        }
     }
 }
