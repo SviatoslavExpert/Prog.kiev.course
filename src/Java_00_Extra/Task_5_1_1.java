@@ -19,10 +19,11 @@ public class Task_5_1_1 {
         for(int i = 0; i < 5; i++){ arr[i] = sc.nextInt();}
         System.out.print(Arrays.toString(arr));
         System.out.println();
+        // Calling max method and printing what it returns
         System.out.print("Максимальное число данного массива: " + max(arr));
     }
 
-    // Calculating and printing the maximum number
+    // Calculating the maximum number
     private static int max(int []arr) {
         int maxNumber = -10000;
         for (int i = 0; i < arr.length; i++) {
