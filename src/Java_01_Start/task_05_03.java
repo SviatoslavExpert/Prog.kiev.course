@@ -16,16 +16,16 @@ public class task_05_03 {
         System.out.println();
 
         System.out.println("Array combinations:");
-        permute(arr,arr.length);
+        makeCombinations(arr,arr.length);
     }
 
-    private static void permute(int[] arr, int size) {
+    private static void makeCombinations(int[] arr, int size) {
         if (size<2){
             System.out.println(Arrays.toString(arr));
         }else{
             for (int k = 0; k <size ; k++) {
                 swap(arr,k,size - 1);
-                permute(arr,size - 1);
+                makeCombinations(arr,size - 1);
                 swap(arr,size - 1,k);
             }
         }
