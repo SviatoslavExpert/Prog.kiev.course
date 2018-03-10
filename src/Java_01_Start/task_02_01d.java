@@ -24,11 +24,11 @@ public class task_02_01d {
         System.out.println("Введите пятизначное число:");
         int num = sc.nextInt();
 
-        System.out.println(num / 10000);         //  5
-        System.out.println(num % 10000 / 1000);  //  4
-        System.out.println(num % 1000 / 100);    //  6
-        System.out.println(num % 100 / 10);      //  9
-        System.out.println(num % 10 / 1);        //  8
+        System.out.println(num / 10000);
+        System.out.println(num % 10000 / 1000);
+        System.out.println(num % 1000 / 100);
+        System.out.println(num % 100 / 10);
+        System.out.println(num % 10);
         sc.close();
     }
 }

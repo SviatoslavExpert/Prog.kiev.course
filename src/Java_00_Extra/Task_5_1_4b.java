@@ -5,19 +5,20 @@
  */
 
 package Java_00_Extra;
+import java.util.Arrays;
 
-public class Task_5_1_4 {
+public class Task_5_1_4b {
     public static void main(String[] args) {
         int[] arr = {11, 45, 69, 101, 350, 12, 539, 999};
-        int arrayElem = 539;
-        System.out.println(findIndex(arr, arrayElem));
+        System.out.println(findIndex(arr));
     }
-    private static int findIndex(int[] arr, int arrayElem){
+    private static int findIndex(int[] arr){
         int result = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == arrayElem) { result = i; }
+        for(int i = 0; i < arr.length; i++) {
+            if (arr[i] == 539) { result = i; }
             else if (result == 0) {result = -1;}
         }
         return result;
      }
 }
+
