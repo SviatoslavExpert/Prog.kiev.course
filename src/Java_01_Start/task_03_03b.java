@@ -20,17 +20,19 @@ import java.util.Scanner;
 public class task_03_03b {
 
     public static void main(String[] args) {
-        //   scanning X and Y
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите координату Х");
         double X = sc.nextDouble();
         System.out.print("Введите координату Y");
         double Y = sc.nextDouble();
 
-        //  getting coordinates of the triangle
-        double Ax = 0, Ay = 0, Bx = 4, By = 4, Cx = 6, Cy = 1;
+        double Ax = 0;
+        double Ay = 0;
+        double Bx = 4;
+        double By = 4;
+        double Cx = 6;
+        double Cy = 1;
 
-        //   calculating if the point is inside the triangle
         double k1 = (Ax - X) * (By - Ay) - (Bx - Ax) * (Ay - Y);
         double k2 = (Bx - X) * (Cy - By) - (Cx - Bx) * (By - Y);
         double k3 = (Cx - X) * (Ay - Cy) - (Ax - Cx) * (Cy - Y);
