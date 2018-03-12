@@ -1,8 +1,18 @@
+/*
+С помощью циклов нарисовать «обои». Причем количество полос
+должно вводиться с клавиатуры. В примере 7 полос.
+***+++***+++***+++***
+***+++***+++***+++***
+***+++***+++***+++***
+***+++***+++***+++***
+***+++***+++***+++***
+ */
 package Java_01_Start;
 
 import java.util.Scanner;
 
 public class Task0501 {
+
     public static void main (String []args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите количество полос:");
