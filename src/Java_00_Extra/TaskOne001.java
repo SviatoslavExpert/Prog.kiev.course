@@ -1,4 +1,9 @@
+/*
+The program should draw a pyramid.  The width of the pyramid is entered by a user.
+ */
+
 package Java_00_Extra;
+
 
 import java.util.Scanner;
 
