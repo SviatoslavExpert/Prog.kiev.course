@@ -5,7 +5,6 @@ The width of the pyramid (odd number) is entered by a user.
 
 package Java_00_Extra;
 
-
 import java.util.Scanner;
 
 public class TaskOne001 {
