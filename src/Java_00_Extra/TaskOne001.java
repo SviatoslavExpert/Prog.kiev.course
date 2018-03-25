@@ -15,7 +15,7 @@ public class TaskOne001 {
     }
 
     private static void drawPyramid(int width){
-
+        width += 2;
         for (int i = width/2 + 1; i > 0; i--) {
             for (int j = 1; j <= width; j++) {
 
