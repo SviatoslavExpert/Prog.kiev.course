@@ -16,7 +16,7 @@ public class task_04_02c {
         rotate(arr);
     }
 
-    static void rotate(int[]a){
+    private static void rotate(int[]a){
         for (int i = 0; i < a.length/2; i++) {
             int b = a[i];
             a[i] = a[a.length - 1 - i];
