@@ -11,15 +11,17 @@ public class TaskOne001 {
     private static int scan(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the height of the pyramid:");
-        int height = sc.nextInt();
-        return height;
+        return sc.nextInt();
     }
 
     private static void drawPyramid(int heightStars){
+        System.out.println(heightStars);
+        int width = 0;
         for(int i = 0; i < heightStars; i++){
-            for(int j = 0; j < heightStars; j++) {
+            for(int j = 1; j < width; j++) {
                 System.out.print("*");
             }
+            width += 2;
             System.out.println();
         }
     }
