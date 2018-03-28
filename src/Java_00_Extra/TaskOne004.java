@@ -11,6 +11,16 @@ public class TaskOne004 {
         Date date = new Date();
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd:MM:yyyy");
-    }
+        String dateText = "";
+        System.out.println("Inout Date:");
 
+        dateText = sc.nextLine();
+
+        try{
+           date = sdf.parse(dateText);
+        }
+        catch(ParseException e){
+            System.out.println(e);
+        }
+    }
 }
