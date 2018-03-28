@@ -10,9 +10,9 @@ public class TaskOne004 {
         Scanner sc = new Scanner(System.in);
         Date date = new Date();
 
-        SimpleDateFormat sdf = new SimpleDateFormat("dd:MM:yyyy");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd:MM:yyyy");  //  описание шаблона для ввода даты
         String dateText = "";
-        System.out.println("Inout Date:");
+        System.out.println("Input Date:");
 
         dateText = sc.nextLine();
 
@@ -22,5 +22,7 @@ public class TaskOne004 {
         catch(ParseException e){
             System.out.println(e);
         }
+
+
     }
 }
