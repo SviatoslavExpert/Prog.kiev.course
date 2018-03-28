@@ -17,12 +17,15 @@ public class TaskOne004 {
         dateText = sc.nextLine();
 
         try{
-           date = sdf.parse(dateText);
+           date = sdf.parse(dateText);  //  разбор строки на основании шаблона
         }
         catch(ParseException e){
             System.out.println(e);
         }
 
-
+        SimpleDateFormat sdfOne = new SimpleDateFormat("dd:MM:yyyy");  //  описание шаблона для вывода даты
+        String text = sdfOne.format(date);
+        System.out.println(text);
+        sc.close();
     }
 }
